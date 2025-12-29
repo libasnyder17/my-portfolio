@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HERMES Mercury Ice Sample Return Mission — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">Liba Snyder</a>
+        <nav class="nav">
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <a href="projects.html">← Back to Projects</a>
+      <h1>HERMES Mercury Ice Sample Return Mission</h1>
+      <img src="assets/hermes_concept_art.jpg" alt="HERMES Concept Art" style="width:100%;border-radius:8px;margin-top:12px" />
+      <p class="lead">Spacecraft Systems Design | Cryogenic Mechanisms | Sample Return Architecture</p>
+
+      <section>
+        <h2>Mission Overview</h2>
+        <p>HERMES is a conceptual sample return mission designed to extract and return water ice samples from Mercury's permanently shadowed polar craters. As mechanical systems team member, I developed the lander's robotic sampling architecture, cryogenic preservation system, and ascent vehicle integration.</p>
+      </section>
+
+      <section>
+        <h2>My Contributions</h2>
+        <h3 style="font-weight:500;margin-top:16px">(1) Lander Mechanical Systems Design</h3>
+        <ul style="margin:8px 0 0 20px">
+          <li>Designed 6-DOF robotic manipulator with 1.5m reach, optimized for 800N drilling loads and Mercury's 3.7 m/s² gravity environment</li>
+          <li>Calculated joint torque requirements (15-150 Nm across 6 joints) using static loading analysis and dynamic drilling forces.</li>
+        </ul>
+        <h3 style="font-weight:500;margin-top:16px">(2) Cryogenic Sample Preservation System</h3>
+        <ul style="margin:8px 0 0 20px">
+          <li>Designed passive tube-catcher mechanism with spring-loaded detent for reliable capture in low-gravity environment</li>
+          <li>Engineered 3-slot cryogenic storage rack thermally anchored to 123K pulse-tube cryocooler, maintaining sample integrity through 10-15W heat load management</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tools & Methods</h2>
+        <div class="project-meta">
+          <span>SolidWorks (CAD/Assembly)</span>
+          <span>MATLAB (trajectory/thermal analysis)</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Results</h2>
+        <ul style="margin:12px 0 0 20px">
+          <li>66.93-minute drilling timeline for three-depth sampling sequence</li>
+          <li>15-20kg total arm system mass with 1.5-2.0 safety factors on all joint torques</li>
+          <li>Sample preservation at 123K ± 5K throughout surface operations and orbital transfer</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Mission Architecture Context</h2>
+        <p style="color:var(--muted);font-size:0.95rem">2032 launch | Earth-Venus gravity assists | 2036-2037 Mercury polar orbit insertion | 2.3-hour surface operations | Sample return via orbital rendezvous</p>
+      </section>
+
+      <section>
+        <h2>Gallery</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:16px">
+          <div>
+            <img src="assets/hermes-thumb.jpg" alt="Gallery 1" style="width:100%;aspect-ratio:1/1;border-radius:8px;object-fit:contain;object-position:center center;background:#f8fafc" />
+            <p style="margin:12px 0 0 0;color:var(--muted);font-size:0.95rem">Cryogenic sample storage system designed in OpenSCAD: 3-slot aluminum rack (Al 6061-T6) thermally anchored to pulse-tube cryocooler cold head maintaining 123 K ± 5 K. Passive funnel-cone tube catcher with spring-loaded detent guides 10-15 mm diameter sample tubes from robotic arm into thermally conductive slots. System manages 10-15 W heat load (radiative + conductive + transient sample cooling) with MLI wrapping (ε_eff = 0.03).</p>
+          </div>
+          <div>
+            <img src="assets/hermes_lander_schematic.jpg" alt="Gallery 2" style="width:100%;aspect-ratio:1/1;border-radius:8px;object-fit:contain;object-position:center center;background:#f8fafc" />
+            <p style="margin:12px 0 0 0;color:var(--muted);font-size:0.95rem">Concept Art: HERMES lander concept during surface operations. Robotic arm is shown extracting ice core samples while the cryocooler maintains sample preservation at 123 K.</p>
+          </div>
+          <div>
+            <img src="assets/Concept_of_operations.jpg" alt="Gallery 3" style="width:100%;aspect-ratio:1/1;border-radius:8px;object-fit:contain;object-position:center center;background:#f8fafc" />
+            <p style="margin:12px 0 0 0;color:var(--muted);font-size:0.95rem">Mission ConOps showing complete sample return workflow: gravity-assist trajectory optimization through Venus flybys, polar orbit insertion at 480 km altitude, rapid surface operations in permanently shadowed crater, and orbital rendezvous for Earth return (Diagram: Emmett Leader).</p>
+          </div>
+          <div>
+            <img src="assets/component_architecture.jpg" alt="Gallery 4" style="width:100%;aspect-ratio:1/1;border-radius:8px;object-fit:contain;object-position:center center;background:#f8fafc" />
+            <p style="margin:12px 0 0 0;color:var(--muted);font-size:0.95rem">Integrated mission architecture: Orbiter provides navigation and communication infrastructure, Lander executes surface sampling with robotic arm and cryogenic preservation, Ascent Vehicle performs orbital rendezvous, and Return Vehicle maintains sample integrity through Earth return and recovery (Diagram: Emmett Leader).</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Download</h2>
+        <p><a href="assets/HERMES_F25_Progress_Presentation.pdf" download style="display:inline-block;padding:10px 16px;background:#111827;color:#fff;text-decoration:none;border-radius:8px">Download HERMES Progress Presentation (PDF)</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Liba Snyder</small>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
